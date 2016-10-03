@@ -1,0 +1,9 @@
+C:\Users\mrncrosario\Documents\Visual Studio 2012\Projects\Chorbs\Flights\bin\Debug\Flights.dacpac
+C:\Users\mrncrosario\Documents\Visual Studio 2012\Projects\Chorbs\Flights\bin\Debug\Flights.dll
+C:\Users\mrncrosario\Documents\Visual Studio 2012\Projects\Chorbs\Flights\bin\Debug\Flights.pdb
+C:\Users\mrncrosario\Documents\Visual Studio 2012\Projects\Chorbs\Flights\obj\Debug\Flights.dll
+C:\Users\mrncrosario\Documents\Visual Studio 2012\Projects\Chorbs\Flights\obj\Debug\Flights.pdb
+C:\Users\mrncrosario\Documents\Visual Studio 2012\Projects\Chorbs\Flights\obj\Debug\Model.xml
+C:\Users\mrncrosario\Documents\Visual Studio 2012\Projects\Chorbs\Flights\obj\Debug\refactor.xml
+C:\Users\mrncrosario\Documents\Visual Studio 2012\Projects\Chorbs\Flights\obj\Debug\postdeploy.sql
+C:\Users\mrncrosario\Documents\Visual Studio 2012\Projects\Chorbs\Flights\obj\Debug\predeploy.sql

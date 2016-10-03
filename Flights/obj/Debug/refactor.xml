@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0">
+  <Operation Name="Rename Refactor" Key="109ea05b-7fb5-49cf-af8b-dcedd6f03fe9" ChangeDateTime="09/27/2016 05:00:36" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Disrupt].[RecoveryPolicy]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Disrupt]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Recovery" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d5a5f0e2-f632-4200-8d4c-72ec036037b2" ChangeDateTime="09/27/2016 05:00:48" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Disrupt].[Recovery]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Disrupt]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="RecoveryPolicy" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5341d17e-322b-47ff-8d9f-2c889cb0e34e" ChangeDateTime="09/27/2016 05:01:26" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+    <Property Name="ElementName" Value="[dbo].[Disrupt].[RecoveryPolicy]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Disrupt]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Recovery" />
+  </Operation>
+</Operations>
