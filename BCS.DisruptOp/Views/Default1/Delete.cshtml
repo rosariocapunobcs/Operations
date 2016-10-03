@@ -1,0 +1,110 @@
+﻿@model BCS.DisruptOp.Models.Disrupt
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Disrupt</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CarrierCode)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CarrierCode)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Number)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Number)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Origin)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Origin)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Destination)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Destination)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.STD)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.STD)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.STA)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.STA)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Severity)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Severity)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PaxDLOriginal)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PaxDLOriginal)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.PaxDLLive)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.PaxDLLive)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Reason)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Reason)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Recovery)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Recovery)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.StaffComms)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StaffComms)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.CustomerComms)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.CustomerComms)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

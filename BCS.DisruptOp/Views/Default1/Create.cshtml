@@ -1,0 +1,132 @@
+﻿@model BCS.DisruptOp.Models.Disrupt
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Disrupt</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CarrierCode)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CarrierCode)
+            @Html.ValidationMessageFor(model => model.CarrierCode)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Number)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Number)
+            @Html.ValidationMessageFor(model => model.Number)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Origin)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Origin)
+            @Html.ValidationMessageFor(model => model.Origin)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Destination)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Destination)
+            @Html.ValidationMessageFor(model => model.Destination)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.STD)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.STD)
+            @Html.ValidationMessageFor(model => model.STD)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.STA)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.STA)
+            @Html.ValidationMessageFor(model => model.STA)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Severity)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Severity)
+            @Html.ValidationMessageFor(model => model.Severity)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PaxDLOriginal)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PaxDLOriginal)
+            @Html.ValidationMessageFor(model => model.PaxDLOriginal)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.PaxDLLive)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.PaxDLLive)
+            @Html.ValidationMessageFor(model => model.PaxDLLive)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Reason)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Reason)
+            @Html.ValidationMessageFor(model => model.Reason)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Recovery)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Recovery)
+            @Html.ValidationMessageFor(model => model.Recovery)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.StaffComms)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.StaffComms)
+            @Html.ValidationMessageFor(model => model.StaffComms)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.CustomerComms)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.CustomerComms)
+            @Html.ValidationMessageFor(model => model.CustomerComms)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

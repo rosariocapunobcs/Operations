@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DisruptFieldOrder>
+  <fields>
+    <field>
+      <Name></Name>
+      <Title></Title>
+      <Type>control</Type>
+      <Validate></Validate>
+    </field>
+    <field>
+      <Name>Event</Name>
+      <Title>Event</Title>
+      <Type>text</Type>
+      <Validate></Validate>
+    </field>
+    <field>
+      <Name>CarrierCode</Name>
+      <Title>Carrier Code</Title>
+      <Type>text</Type>
+      <Validate></Validate>
+    </field>
+    <field>
+      <Name>Number</Name>
+      <Title>Number</Title>
+      <Type>number</Type>
+      <Validate></Validate>
+    </field>
+    <field>
+      <Name>Origin</Name>
+      <Title>Origin</Title>
+      <Type>text</Type>
+      <Validate></Validate>
+    </field>
+    <field>
+      <Name>Destination</Name>
+      <Title>Destination</Title>
+      <Type>text</Type>
+      <Validate></Validate>
+    </field>
+    <field>
+      <Name>STD</Name>
+      <Title>STD</Title>
+      <Type>date</Type>
+      <Validate></Validate>
+    </field>
+    <field>
+      <Name>STA</Name>
+      <Title>STA</Title>
+      <Type>date</Type>
+      <Validate></Validate>
+    </field>
+    <field>
+      <Name>SeverityLevel</Name>
+      <Title>Severity Level</Title>
+      <Type>text</Type>
+      <Validate></Validate>
+    </field>
+    <field>
+      <Name>PaxDLOriginal</Name>
+      <Title>Pax DL Original</Title>
+      <Type>number</Type>
+      <Validate></Validate>
+    </field>
+    <field>
+      <Name>PaxDLLive</Name>
+      <Title>Pax DL Live</Title>
+      <Type>number</Type>
+      <Validate></Validate>
+    </field>
+    <field>
+      <Name>DisruptReason</Name>
+      <Title>Disrupt Reason</Title>
+      <Type>text</Type>
+      <Validate></Validate>
+    </field>
+    <field>
+      <Name>RecoveryPolicy</Name>
+      <Title>Recovery Policy</Title>
+      <Type>text</Type>
+      <Validate></Validate>
+    </field>
+    <field>
+      <Name>RecoveryPlan</Name>
+      <Title>Recovery Plan</Title>
+      <Type>text</Type>
+      <Validate></Validate>
+    </field>
+    <field>
+      <Name>StaffComms</Name>
+      <Title>Staff Comms</Title>
+      <Type>text</Type>
+      <Validate></Validate>
+    </field>
+    <field>
+      <Name>CustomerComms</Name>
+      <Title>Customer Comms</Title>
+      <Type>text</Type>
+      <Validate></Validate>
+    </field>
+  </fields>
+</DisruptFieldOrder>

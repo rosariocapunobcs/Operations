@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="FlightsModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="FlightsModelStoreContainer">
+          <EntitySet Name="Disrupt" EntityType="FlightsModel.Store.Disrupt" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Recovery" EntityType="FlightsModel.Store.Recovery" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Disrupt">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="CarrierCode" Type="char" Nullable="false" MaxLength="10" />
+          <Property Name="Number" Type="nchar" Nullable="false" MaxLength="10" />
+          <Property Name="Origin" Type="char" Nullable="false" MaxLength="10" />
+          <Property Name="Destination" Type="char" Nullable="false" MaxLength="10" />
+          <Property Name="STD" Type="datetime" Nullable="false" />
+          <Property Name="STA" Type="datetime" Nullable="false" />
+          <Property Name="Severity" Type="varchar" Nullable="false" MaxLength="50" />
+          <Property Name="PaxDLOriginal" Type="numeric" Nullable="false" />
+          <Property Name="PaxDLLive" Type="numeric" Nullable="false" />
+          <Property Name="Reason" Type="varchar(max)" />
+          <Property Name="Recovery" Type="numeric" />
+          <Property Name="StaffComms" Type="varchar(max)" />
+          <Property Name="CustomerComms" Type="varchar(max)" />
+          <Property Name="Event" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Recovery">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Policy" Type="varchar(max)" Nullable="false" />
+          <Property Name="Plan" Type="varchar(max)" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FlightsModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="FlightsEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Disrupts" EntityType="FlightsModel.Disrupt" />
+          <EntitySet Name="Recoveries" EntityType="FlightsModel.Recovery" />
+        </EntityContainer>
+        <EntityType Name="Disrupt">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="CarrierCode" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="Number" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="Origin" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="Destination" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="STD" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="STA" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Severity" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="PaxDLOriginal" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="PaxDLLive" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="Reason" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Recovery" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="StaffComms" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="CustomerComms" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Type="String" Name="Event" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Recovery">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Policy" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Plan" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FlightsModelStoreContainer" CdmEntityContainer="FlightsEntities">
+          <EntitySetMapping Name="Disrupts">
+            <EntityTypeMapping TypeName="FlightsModel.Disrupt">
+              <MappingFragment StoreEntitySet="Disrupt">
+                <ScalarProperty Name="Event" ColumnName="Event" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="CarrierCode" ColumnName="CarrierCode" />
+                <ScalarProperty Name="Number" ColumnName="Number" />
+                <ScalarProperty Name="Origin" ColumnName="Origin" />
+                <ScalarProperty Name="Destination" ColumnName="Destination" />
+                <ScalarProperty Name="STD" ColumnName="STD" />
+                <ScalarProperty Name="STA" ColumnName="STA" />
+                <ScalarProperty Name="Severity" ColumnName="Severity" />
+                <ScalarProperty Name="PaxDLOriginal" ColumnName="PaxDLOriginal" />
+                <ScalarProperty Name="PaxDLLive" ColumnName="PaxDLLive" />
+                <ScalarProperty Name="Reason" ColumnName="Reason" />
+                <ScalarProperty Name="Recovery" ColumnName="Recovery" />
+                <ScalarProperty Name="StaffComms" ColumnName="StaffComms" />
+                <ScalarProperty Name="CustomerComms" ColumnName="CustomerComms" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Recoveries">
+            <EntityTypeMapping TypeName="FlightsModel.Recovery">
+              <MappingFragment StoreEntitySet="Recovery">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Policy" ColumnName="Policy" />
+                <ScalarProperty Name="Plan" ColumnName="Plan" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FlightsModelStoreContainer" CdmEntityContainer="FlightsEntities">
+    <EntitySetMapping Name="Disrupts">
+      <EntityTypeMapping TypeName="FlightsModel.Disrupt">
+        <MappingFragment StoreEntitySet="Disrupt">
+          <ScalarProperty Name="Event" ColumnName="Event" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CarrierCode" ColumnName="CarrierCode" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Origin" ColumnName="Origin" />
+          <ScalarProperty Name="Destination" ColumnName="Destination" />
+          <ScalarProperty Name="STD" ColumnName="STD" />
+          <ScalarProperty Name="STA" ColumnName="STA" />
+          <ScalarProperty Name="Severity" ColumnName="Severity" />
+          <ScalarProperty Name="PaxDLOriginal" ColumnName="PaxDLOriginal" />
+          <ScalarProperty Name="PaxDLLive" ColumnName="PaxDLLive" />
+          <ScalarProperty Name="Reason" ColumnName="Reason" />
+          <ScalarProperty Name="Recovery" ColumnName="Recovery" />
+          <ScalarProperty Name="StaffComms" ColumnName="StaffComms" />
+          <ScalarProperty Name="CustomerComms" ColumnName="CustomerComms" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Recoveries">
+      <EntityTypeMapping TypeName="FlightsModel.Recovery">
+        <MappingFragment StoreEntitySet="Recovery">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Policy" ColumnName="Policy" />
+          <ScalarProperty Name="Plan" ColumnName="Plan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

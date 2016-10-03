@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FlightsModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="FlightsModelStoreContainer">
+    <EntitySet Name="Disrupt" EntityType="FlightsModel.Store.Disrupt" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Recovery" EntityType="FlightsModel.Store.Recovery" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Disrupt">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="CarrierCode" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="Number" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="Origin" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="Destination" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="STD" Type="datetime" Nullable="false" />
+    <Property Name="STA" Type="datetime" Nullable="false" />
+    <Property Name="Severity" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="PaxDLOriginal" Type="numeric" Nullable="false" />
+    <Property Name="PaxDLLive" Type="numeric" Nullable="false" />
+    <Property Name="Reason" Type="varchar(max)" />
+    <Property Name="Recovery" Type="numeric" />
+    <Property Name="StaffComms" Type="varchar(max)" />
+    <Property Name="CustomerComms" Type="varchar(max)" />
+    <Property Name="Event" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Recovery">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Policy" Type="varchar(max)" Nullable="false" />
+    <Property Name="Plan" Type="varchar(max)" />
+  </EntityType>
+</Schema>
