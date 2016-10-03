@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BCS.DisruptOp", "BCS.DisruptOp\BCS.DisruptOp.csproj", "{50A2D103-22F6-4043-A5F5-A1E95E477A88}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Flights", "Flights\Flights.sqlproj", "{454E77B5-1532-4C95-80CA-FA3A9D731237}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50A2D103-22F6-4043-A5F5-A1E95E477A88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50A2D103-22F6-4043-A5F5-A1E95E477A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50A2D103-22F6-4043-A5F5-A1E95E477A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50A2D103-22F6-4043-A5F5-A1E95E477A88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{454E77B5-1532-4C95-80CA-FA3A9D731237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{454E77B5-1532-4C95-80CA-FA3A9D731237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{454E77B5-1532-4C95-80CA-FA3A9D731237}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{454E77B5-1532-4C95-80CA-FA3A9D731237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{454E77B5-1532-4C95-80CA-FA3A9D731237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{454E77B5-1532-4C95-80CA-FA3A9D731237}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
